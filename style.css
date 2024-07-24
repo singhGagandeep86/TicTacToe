@@ -1,53 +1,96 @@
 body {
-    background-color: #323232;
-    font-family: 'Open Sans', sans-serif;
-    color: #ffffff;
-    margin: 0;
-    text-align: center;
+  background-color: #323232;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
 }
 
 #content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 220px;
+  position: relative;
+
 }
 
 table {
-    border-collapse: collapse;
-    margin: 20px auto;
+  margin-top: 200px;
+  border-collapse: collapse;
+  margin: 20px auto;
+  position: absolute;
+  top: 28px;
 }
 
 td {
-    width: 100px;
-    height: 100px;
-    border: 5px solid #ffffff;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 24px;
-    color: #ffffff; /* Weiße Farbe innerhalb der Tabelle */
+  width: 100px;
+  height: 100px;
+  border: 5px solid #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  color: #ffffff;
+  /* Weiße Farbe innerhalb der Tabelle */
+}
+
+td:hover {
+  background-color: rgb(255, 255, 255, 0.4);
+  cursor: pointer;
 }
 
 table td {
-    border: 5px solid white; 
-  }
-  table tr:first-child td {
-    border-top: 0;
-  }
-  table tr td:first-child {
-    border-left: 0;
-  }
-  table tr:last-child td {
-    border-bottom: 0;
-  }
-  table tr td:last-child {
-    border-right: 0;
-  }
+  border: 5px solid white;
+}
+
+table tr:first-child td {
+  border-top: 0;
+}
+
+table tr td:first-child {
+  border-left: 0;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr td:last-child {
+  border-right: 0;
+}
 
 .circle {
-    color: red;
+  color: red;
 }
 
 .cross {
-    color: blue;
+  color: blue;
+}
+
+.winning-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.win-announcment{
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 182px;
+  color: indianred;
+}
+
+.cross{
+  font-size: 26px;
+  color: rgb(254, 199, 3);
+}
+
+.circle{
+  font-size: 26px;
+  color: #01b0ef;
 }
